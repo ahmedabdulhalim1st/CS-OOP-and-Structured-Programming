@@ -1,22 +1,33 @@
 namespace week2
 {
-    // ClassModifier > Public - internal [Default]
-    // <ClassModifier> calss <CalssName>
-    // {
-    //      calss Block [Fields - Constants - Properties - Methods - Events
-    //  - Opterators - Indexers - Constructors - Finalizers - Nasted Types]
-    // }
     public class Employee
     {
-        // <AccessModifiers> Public, Private, Protected
-        // Constants > <AccessModifiers> const <DataType> <ConstName> = <Value>;
         public static double TAX;
-
-        // <AccessModifiers> Public, Private, Protected
-        // Fields > <AccessModifiers> <DataType> <FieldName> = <InitialValue>;
         public string? fName = "";
         public string? lName = "";
         public double wage;
         public double loggedHoures;
+
+        private double Calculate() => (wage) * (loggedHoures);
+
+        private double CalculateTAX() => (Calculate()) * (TAX);
+
+        private double CalculateNetSalary() => (Calculate()) - (CalculateTAX());
+
+        public string PrintSlip()
+        {
+            return "\n----------------------------------------------"
+                + $"\nFirst Name   : {fName}"
+                + $"\nLast Name    : {lName}"
+                + $"\nWage         : {wage}"
+                + $"Logged Hours : {loggedHoures}"
+                + "----------------------------------------------"
+                + $"Salary       : ${Calculate()}"
+                + $"TAX Rate     : {TAX:P0}"
+                + $"TAX Amount   : ${CalculateTAX()}"
+                + $"NetSalary    : ${CalculateNetSalary()}"
+                + "----------------------------------------------";
+        }
     }
 }
+
