@@ -4,6 +4,4 @@ Basic Project using OOP
 
 Hello!
 
-This is simple Project Represent TAX amount Calculation Using C# 
-
-I will add more features  
+This is My trip Learning C#
