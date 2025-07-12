@@ -16,17 +16,17 @@ namespace week2
 
         public string PrintSlip()
         {
-            return "\n----------------------------------------------"
+            return "\n\n----------------------------------------------"
                 + $"\nFirst Name   : {fName}"
                 + $"\nLast Name    : {lName}"
                 + $"\nWage         : {wage}"
-                + $"Logged Hours : {loggedHoures}"
+                + $"\nLogged Hours : {loggedHoures}"
                 + "----------------------------------------------"
-                + $"Salary       : ${Calculate()}"
-                + $"TAX Rate     : {TAX:P0}"
-                + $"TAX Amount   : ${CalculateTAX()}"
-                + $"NetSalary    : ${CalculateNetSalary()}"
-                + "----------------------------------------------";
+                + $"\nSalary       : ${Calculate()}"
+                + $"\nTAX Rate     : {TAX:P0}"
+                + $"\nTAX Amount   : ${CalculateTAX()}"
+                + $"\nNetSalary    : ${CalculateNetSalary()}"
+                + "\n----------------------------------------------\n";
         }
     }
 }
