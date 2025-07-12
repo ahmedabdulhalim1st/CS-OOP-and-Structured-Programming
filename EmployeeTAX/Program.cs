@@ -37,20 +37,7 @@ class Program
         emps[0] = e1;
         foreach (var emp in emps)
         {
-            var salary = (emp.wage * emp.loggedHoures);
-            var TAXAmount = (salary * Employee.TAX);
-            var netSalary = (salary) - (TAXAmount);
-            System.Console.WriteLine("----------------------------------------------");
-            System.Console.WriteLine($"First Name   : {emp.fName}");
-            System.Console.WriteLine($"Last Name    : {emp.lName}");
-            System.Console.WriteLine($"Wage         : {emp.wage}");
-            System.Console.WriteLine($"Logged Hours : {emp.loggedHoures}");
-            System.Console.WriteLine("----------------------------------------------");
-            System.Console.WriteLine($"Salary       : ${salary}");
-            System.Console.WriteLine($"TAX Rate     : {Employee.TAX:P0}");
-            System.Console.WriteLine($"TAX Amount   : ${TAXAmount}");
-            System.Console.WriteLine($"NetSalary    : ${netSalary}");
-            System.Console.WriteLine("----------------------------------------------");
+            System.Console.WriteLine(e1.PrintSlip());
         }
         Console.ReadKey();
         return 0;
