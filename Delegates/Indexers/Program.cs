@@ -1,4 +1,5 @@
-﻿namespace Indexers
+
+namespace Indexers
 {
     public class Program
     {
@@ -19,6 +20,26 @@
             Reports.ProcessEmployee(Emps, "Employees With Target Greater Than $60,000", IsGreaterThan60000);
             Reports.ProcessEmployee(Emps, "Employees With Target Greater Than $30,000 & Less Than $60,000", IsGreaterThan30000AndLessThan60000);
             Reports.ProcessEmployee(Emps, "Employees With Target Less Than $30,000", IsLessThan30000);
+
+
+            Console.ReadKey();
+            // in case of annonimous Delegate
+            var reports = new Report();
+            reports.ProcessEmployee(Emps, "Employees With Target Greater Than $60,000", delegate (Employee E) { return E.TotalSales >= 60000; });
+            reports.ProcessEmployee(Emps, "Employees With Target Greater Than $30,000 & Less Than $60,000",
+                                    delegate(Employee E) { return E.TotalSales >= 30000 && E.TotalSales < 60000; });
+            reports.ProcessEmployee(Emps, "Employees With Target Less Than $30,000", delegate(Employee E) { return E.TotalSales < 30000; });
+
+
+            Console.ReadKey();
+            // in case of Lambda Expresssion
+            var _reports = new Report();
+            _reports.ProcessEmployee(Emps, "Employees With Target Greater Than $60,000", E => E.TotalSales >= 60000);
+            _reports.ProcessEmployee(Emps, "Employees With Target Greater Than $30,000 & Less Than $60,000",
+                                       E => E.TotalSales >= 30000 && E.TotalSales < 60000);
+            _reports.ProcessEmployee(Emps, "Employees With Target Less Than $30,000", E => E.TotalSales < 30000);
+
+
 
             Console.ReadKey();
         }
