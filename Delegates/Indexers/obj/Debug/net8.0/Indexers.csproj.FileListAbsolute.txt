@@ -1,0 +1,14 @@
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\bin\Debug\net8.0\Indexers.exe
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\bin\Debug\net8.0\Indexers.deps.json
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\bin\Debug\net8.0\Indexers.runtimeconfig.json
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\bin\Debug\net8.0\Indexers.dll
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\bin\Debug\net8.0\Indexers.pdb
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\obj\Debug\net8.0\Indexers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\obj\Debug\net8.0\Indexers.AssemblyInfoInputs.cache
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\obj\Debug\net8.0\Indexers.AssemblyInfo.cs
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\obj\Debug\net8.0\Indexers.csproj.CoreCompileInputs.cache
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\obj\Debug\net8.0\Indexers.dll
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\obj\Debug\net8.0\refint\Indexers.dll
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\obj\Debug\net8.0\Indexers.pdb
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\obj\Debug\net8.0\Indexers.genruntimeconfig.cache
+C:\Users\Ahmad\source\repos\OOP&DAS\Indexers\obj\Debug\net8.0\ref\Indexers.dll
